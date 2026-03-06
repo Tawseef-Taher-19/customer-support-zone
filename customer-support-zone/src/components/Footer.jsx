@@ -1,5 +1,9 @@
 function Footer() {
-  return <footer className="footer"></footer>
+  return (
+    <footer className="footer">
+      <p>© 2026 Customer Support Zone. All rights reserved.</p>
+    </footer>
+  )
 }
 
-export default F
+export default Footer
