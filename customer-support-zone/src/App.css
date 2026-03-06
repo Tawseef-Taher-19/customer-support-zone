@@ -40,3 +40,37 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* commit 5 css */
+.status-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.task-item,
+.resolved-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.task-item:last-child,
+.resolved-item:last-child {
+  border-bottom: none;
+}
+
+.resolved-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}

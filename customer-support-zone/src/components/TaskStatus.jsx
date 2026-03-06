@@ -1,4 +1,4 @@
-function TaskStatus({ inProgressTickets }) {
+function TaskStatus({ inProgressTickets, onCompleteTask }) {
   return (
     <div className="status-box">
       <h2 className="section-title">Task Status</h2>
@@ -7,7 +7,9 @@ function TaskStatus({ inProgressTickets }) {
         inProgressTickets.map((ticket) => (
           <div key={ticket.id} className="task-item">
             <p>{ticket.title}</p>
-            <button className="complete-btn">Complete</button>
+            <button onClick={() => onCompleteTask(ticket)} className="complete-btn">
+              Complete
+            </button>
           </div>
         ))
       ) : (
