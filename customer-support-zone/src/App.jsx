@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import TicketList from './components/TicketList'
@@ -14,14 +15,15 @@ function App() {
 
   const handleAddToProgress = (ticket) => {
     const alreadyAdded = inProgressTickets.find((item) => item.id === ticket.id)
+    const alreadyResolved = resolvedTickets.find((item) => item.id === ticket.id)
 
-    if (alreadyAdded) {
-      alert('This ticket is already being handled.')
+    if (alreadyAdded || alreadyResolved) {
+      toast.warning('This ticket is already being handled.')
       return
     }
 
     setInProgressTickets([...inProgressTickets, ticket])
-    alert(`${ticket.title} added to task status`)
+    toast.success(`"${ticket.title}" added to Task Status.`)
   }
 
   const handleCompleteTask = (ticket) => {
@@ -32,7 +34,7 @@ function App() {
     setResolvedTickets([...resolvedTickets, { ...ticket, status: 'Resolved' }])
     setTickets(updatedTickets)
 
-    alert(`${ticket.title} marked as resolved`)
+    toast.success(`"${ticket.title}" marked as resolved.`)
   }
 
   return (
@@ -55,6 +57,7 @@ function App() {
         </div>
       </main>
       <Footer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   )
 }
