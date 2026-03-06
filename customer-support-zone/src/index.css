@@ -88,3 +88,37 @@ button {
   padding: 20px;
   margin-top: 20px;
 }
+
+.main-container {
+  padding: 0 5% 40px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ticket-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-card h3 {
+  margin-bottom: 12px;
+}
+
+.ticket-card p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.progress-btn {
+  margin-top: 10px;
+  background: #0f766e;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+}

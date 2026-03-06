@@ -1,0 +1,58 @@
+const tickets = [
+  {
+    id: 1,
+    title: "Login issue on customer portal",
+    description: "Customer cannot log into the portal after resetting the password.",
+    customer: "Rahim Uddin",
+    priority: "High",
+    status: "Open",
+    createdAt: "2026-03-01",
+  },
+  {
+    id: 2,
+    title: "Payment confirmation email missing",
+    description: "Customer completed payment but did not receive a confirmation email.",
+    customer: "Sadia Akter",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2026-03-02",
+  },
+  {
+    id: 3,
+    title: "Order tracking not updating",
+    description: "Tracking page shows no movement even though the parcel has shipped.",
+    customer: "Imran Hossain",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2026-03-02",
+  },
+  {
+    id: 4,
+    title: "Refund request for damaged item",
+    description: "Customer received a damaged item and requested a refund.",
+    customer: "Nusrat Jahan",
+    priority: "High",
+    status: "Open",
+    createdAt: "2026-03-03",
+  },
+  {
+    id: 5,
+    title: "Mobile menu not opening",
+    description: "Customer reports that the mobile navigation menu is unresponsive.",
+    customer: "Tanvir Hasan",
+    priority: "Low",
+    status: "Open",
+    createdAt: "2026-03-03",
+  },
+  {
+    id: 6,
+    title: "Coupon code not applying",
+    description: "Discount coupon shows invalid even though it is within the active date.",
+    customer: "Mim Chowdhury",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2026-03-04",
+  },
+]
+
+export default tickets
