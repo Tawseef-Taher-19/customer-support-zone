@@ -1,16 +1,27 @@
-# React + Vite
+# Customer Support Zone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Customer Support Zone project where users can manage customer tickets, track task progress, and resolve support issues.
 
-Currently, two official plugins are available:
+## Technologies Used
+- HTML
+- CSS (Vanilla)
+- JavaScript
+- React.js
+- React-Toastify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Questions & Answers
 
-## React Compiler
+### What is JSX, and why is it used?
+JSX stands for JavaScript XML. It allows developers to write HTML-like code inside JavaScript. In React, JSX is used to create UI components more easily and make the code more readable.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### What is the difference between State and Props?
+Props are used to pass data from a parent component to a child component. State is used to store and manage data inside a component and can change over time.
 
-## Expanding the ESLint configuration
+### What is the useState hook, and how does it work?
+The useState hook is used to add state to functional components. It returns the current state and a function to update it.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### How can you share state between components in React?
+State can be shared by lifting it up to the nearest common parent and passing it through props.
+
+### How is event handling done in React?
+Event handling in React is done using camelCase event names like onClick, onChange, and onSubmit, where a function is passed as the handler.
