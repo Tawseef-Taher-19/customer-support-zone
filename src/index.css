@@ -282,3 +282,67 @@ button {
     font-size: 28px;
   }
 }
+
+/* 5 column grid footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 40px 5% 20px;
+  margin-top: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 12px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
