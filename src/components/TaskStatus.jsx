@@ -13,7 +13,7 @@ function TaskStatus({ inProgressTickets, onCompleteTask }) {
           </div>
         ))
       ) : (
-        <p className="empty-text">No tickets in progress.</p>
+        <p className="empty-text">Select a ticket to add to Task Status</p>
       )}
     </div>
   )

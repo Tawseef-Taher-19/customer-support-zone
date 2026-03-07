@@ -1,14 +1,27 @@
 function TicketCard({ ticket, onAddToProgress }) {
-  const { title, description, customer, priority, status, createdAt } = ticket
+  const { id, title, description, customer, priority, status, createdAt } = ticket
 
   return (
     <div className="ticket-card">
-      <h3>{title}</h3>
-      <p><strong>Description:</strong> {description}</p>
-      <p><strong>Customer:</strong> {customer}</p>
-      <p><strong>Priority:</strong> {priority}</p>
-      <p><strong>Status:</strong> {status}</p>
-      <p><strong>Created At:</strong> {createdAt}</p>
+      <div className="ticket-header">
+        <h3>{title}</h3>
+        <span className={`status-badge ${status.toLowerCase().replace(" ", "-")}`}>
+          {status}
+        </span>
+      </div>
+
+      <p className="ticket-desc">{description}</p>
+
+      <div className="ticket-meta">
+        <span className="ticket-id">#{id}</span>
+
+        <span className={`priority-badge ${priority.toLowerCase()}`}>
+          {priority.toUpperCase()} PRIORITY
+        </span>
+
+        <span className="ticket-customer">{customer}</span>
+        <span className="ticket-date">{createdAt}</span>
+      </div>
 
       <button onClick={() => onAddToProgress(ticket)} className="progress-btn">
         Add to Task Status

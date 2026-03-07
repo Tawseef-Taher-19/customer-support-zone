@@ -53,6 +53,146 @@ const tickets = [
     status: "Open",
     createdAt: "2026-03-04",
   },
+   {
+    id: 7,
+    title: "Login Issues - Can't Access Account",
+    description:
+      "Customer is unable to log in to their account. They've tried resetting their password multiple times but still cannot access.",
+    customer: "John Smith",
+    priority: "High",
+    status: "Open",
+    createdAt: "2024-11-15",
+  },
+  {
+    id: 8,
+    title: "Payment Failed - Card Declined",
+    description:
+      "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+    customer: "Sarah Johnson",
+    priority: "High",
+    status: "Open",
+    createdAt: "2024-11-16",
+  },
+  {
+    id: 9,
+    title: "Unable to Download Invoice",
+    description:
+      "Customer cannot download their January invoice from the billing section. The download button is missing.",
+    customer: "Michael Brown",
+    priority: "Medium",
+    status: "In Progress",
+    createdAt: "2024-11-17",
+  },
+  {
+    id: 10,
+    title: "Incorrect Billing Address",
+    description:
+      "Customer's billing address shows a different city. They updated it but it still displays the old one.",
+    customer: "Emily Davis",
+    priority: "Low",
+    status: "Open",
+    createdAt: "2024-11-18",
+  },
+  {
+    id: 11,
+    title: "App Crash on Launch",
+    description:
+      "Customer reports that the mobile app crashes immediately upon opening on Android 13.",
+    customer: "David Wilson",
+    priority: "High",
+    status: "Open",
+    createdAt: "2024-11-19",
+  },
+  {
+    id: 12,
+    title: "Refund Not Processed",
+    description:
+      "Customer requested a refund two weeks ago but has not received the amount yet.",
+    customer: "Sophia Taylor",
+    priority: "Medium",
+    status: "In Progress",
+    createdAt: "2024-11-20",
+  },
+  {
+    id: 13,
+    title: "Two-Factor Authentication Issue",
+    description:
+      "Customer is not receiving 2FA codes on their registered phone number.",
+    customer: "James Anderson",
+    priority: "High",
+    status: "Open",
+    createdAt: "2024-11-21",
+  },
+  {
+    id: 14,
+    title: "Unable to Update Profile Picture",
+    description:
+      "Customer tries to upload a new profile picture but gets an 'upload failed' error.",
+    customer: "Olivia Martinez",
+    priority: "Low",
+    status: "Open",
+    createdAt: "2024-11-22",
+  },
+  {
+    id: 15,
+    title: "Subscription Auto-Renewal",
+    description:
+      "Customer wants to enable auto-renewal for their subscription but the toggle is disabled.",
+    customer: "Liam Thomas",
+    priority: "Medium",
+    status: "In Progress",
+    createdAt: "2024-11-23",
+  },
+  {
+    id: 16,
+    title: "Missing Order Confirmation Email",
+    description:
+      "Customer placed an order but didn't receive a confirmation email even though payment succeeded.",
+    customer: "Isabella Garcia",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2024-11-24",
+  },
+  {
+    id: 17,
+    title: "Dashboard Not Loading",
+    description:
+      "Customer dashboard remains blank after login and does not display any widgets.",
+    customer: "Daniel Clark",
+    priority: "High",
+    status: "Open",
+    createdAt: "2024-11-25",
+  },
+  {
+    id: 18,
+    title: "Error While Changing Password",
+    description:
+      "Customer gets an unexpected error message while trying to update their password.",
+    customer: "Mia Rodriguez",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2024-11-26",
+  },
+  {
+    id: 19,
+    title: "Notification Emails Not Received",
+    description:
+      "Customer has enabled notifications but does not receive email alerts for updates.",
+    customer: "Ethan Walker",
+    priority: "Low",
+    status: "Open",
+    createdAt: "2024-11-27",
+  },
+  {
+    id: 20,
+    title: "Order Status Not Updating",
+    description:
+      "Customer reports that their order still shows 'Processing' even after delivery.",
+    customer: "Ava Hall",
+    priority: "Medium",
+    status: "Open",
+    createdAt: "2024-11-28",
+  },
 ]
 
 export default tickets

@@ -1,7 +1,7 @@
 function ResolvedList({ resolvedTickets }) {
   return (
     <div className="status-box resolved-box">
-      <h2 className="section-title">Resolved List</h2>
+      <h2 className="section-title">Resolved Task</h2>
 
       {resolvedTickets.length > 0 ? (
         resolvedTickets.map((ticket) => (

@@ -22,19 +22,68 @@ button {
   transition: 0.3s ease;
 }
 
+/* Updated NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
+  padding: 14px 6%;
   background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #eee;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  font-size: 14px;
+  color: #555;
+  transition: 0.2s;
+}
+
+.nav-menu li a:hover {
+  color: #111;
+}
+
+/* BUTTON */
+
+.ticket-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #422AD5, #6C4CF1);
+}
+
+.ticket-btn:hover {
+  opacity: 0.9;
+}
+
+.plus {
+  font-size: 16px;
   font-weight: bold;
-  color: #2563eb;
 }
 
 .nav-right {
@@ -57,10 +106,10 @@ button {
 }
 
 .banner {
-  margin: 30px 5%;
-  padding: 40px;
+  margin: 30px 0%;
+  padding: 40px 0px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  /* background: linear-gradient(135deg, #2563eb, #7c3aed); */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -339,10 +388,339 @@ button {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-info{
+    display: none;
+  }
+  
 }
 
 @media (max-width: 576px) {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* ------- */
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 48px 0 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2.1fr 1fr 1fr 1fr 1.35fr;
+  gap: 36px;
+  padding-bottom: 32px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.footer-column h4 {
+  font-size: 15px;
+}
+
+.footer-brand p {
+  max-width: 290px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #bdbdbd;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: #bdbdbd;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #bdbdbd;
+}
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .company-column,
+  .services-column,
+  .info-column {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 16px 0 10px;
+  }
+
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-column h3,
+  .footer-column h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-social{
+    /* display:none; */
+    text-align:center;
+  } 
+
+  
+}
+
+@media (max-width: 400px) {
+.banner-cards{
+  flex-direction: column;
+  padding: 10px 50px;
+  transition-delay: 900ms;
+
+}
+}
+
+/* updated banner */
+.banner {
+  padding: 32px 5%;
+}
+
+.banner-cards {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+
+.banner-card {
+  flex: 1 1 50%;
+  min-width: 0;
+  height: 170px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.card-count {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* badge css */
+/* STATUS BADGES */
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.open {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.in-progress {
+  background: #fde68a;
+  color: #92400e;
+}
+
+/* PRIORITY BADGES */
+
+.priority-badge {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.priority-badge.high {
+  color: #ef4444;
+  background-color: #fee2e2;
+  border-radius: 25%;
+  padding: 5px 6px;
+  margin: 0 4px;
+}
+
+.priority-badge.medium {
+  color: #f59e0b;
+  background-color: #fef3c7;
+  border-radius: 25%;
+  padding: 5px 6px;
+  margin: 0 4px;
+}
+
+.priority-badge.low {
+  color: #16a34a;
+  background-color: #dcfce7;
+  border-radius: 25%;
+  padding: 5px 6px;
+  margin: 0 4px;
+}
+
+/* STATUS BADGE */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Small circle */
+
+.status-badge::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:5px;
+}
+
+/* OPEN */
+
+.status-badge.open {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.open::before {
+  background: #16a34a;
+}
+
+/* IN PROGRESS */
+
+.status-badge.in-progress {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.status-badge.in-progress::before {
+  background: #f59e0b;
+}
+/* status badge finish */
+
+
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-desc {
+  font-size: 13px;
+  margin: 10px 0;
+  color: #6b7280;
+}
+
+.ticket-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ticket-customer{
+  margin-left:20%;
+  
+}
+
+/* footer social-link css */
+.footer-social {
+  text-align: center;
+}
+
+.footer-social .social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social .social-links li {
+  margin-bottom: 10px;
+}
+
+.footer-social .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
